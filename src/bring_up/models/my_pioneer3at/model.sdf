@@ -1,0 +1,362 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="pioneer3at">
+    <pose>0 0 0.180 0 0 0</pose>
+    <static>false</static>
+    <link name="chassis">
+      <inertial>
+        <mass>14.0</mass>
+        <inertia>
+          <ixx>0.147116667</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.334951167</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.3978345</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.501 0.300 0.19</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://pioneer3at/meshes/chassis.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="right_front_wheel">
+      <pose>0.125 -0.201 -0.06 1.5707 0 0</pose>1
+
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.005240625</ixx>
+          <iyy>0.005240625</iyy>
+          <izz>0.009075</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.110</radius>
+            <length>0.075</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <slip1>0.5</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://pioneer3at/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="left_front_wheel">
+      <pose>0.125 0.201 -0.06 1.5707 0 0</pose>
+
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.005240625</ixx>
+          <iyy>0.005240625</iyy>
+          <izz>0.009075</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.110</radius>
+            <length>0.075</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <slip1>0.5</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://pioneer3at/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="right_rear_wheel">
+      <pose>-0.125 -0.201 -0.06 1.5707 0 0</pose>
+
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.005240625</ixx>
+          <iyy>0.005240625</iyy>
+          <izz>0.009075</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.110</radius>
+            <length>0.075</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <slip1>0.5</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://pioneer3at/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name="left_rear_wheel">
+      <pose>-0.125 0.201 -0.06 1.5707 0 0</pose>
+
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.005240625</ixx>
+          <iyy>0.005240625</iyy>
+          <izz>0.009075</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.110</radius>
+            <length>0.075</length>
+          </cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1</mu>
+              <mu2>1</mu2>
+              <slip1>0.5</slip1>
+              <slip2>0</slip2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://pioneer3at/meshes/wheel.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint type="revolute" name="right_front">
+      <pose>0 0 0 0 0 0</pose>
+      <child>right_front_wheel</child>
+      <parent>chassis</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint type="revolute" name="right_rear">
+      <pose>0 0 0 0 0 0</pose>
+      <child>right_rear_wheel</child>
+      <parent>chassis</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint type="revolute" name="left_front">
+      <pose>0 0 0 0 0 0</pose>
+      <child>left_front_wheel</child>
+      <parent>chassis</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+    <joint type="revolute" name="left_rear">
+      <pose>0 0 0 0 0 0</pose>
+      <child>left_rear_wheel</child>
+      <parent>chassis</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <use_parent_model_frame>true</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <!-- <plugin name="SkidSteerDrivePlugin" filename="libSkidSteerDrivePlugin.so">
+      <right_front>right_front</right_front>
+      <right_rear>right_rear</right_rear>
+      <left_front>left_front</left_front>
+      <left_rear>left_rear</left_rear>
+      <MaxForce>5.0</MaxForce>
+    </plugin> -->
+
+
+
+
+    	<!-- Adding Camera -->
+
+    	<include>
+      <uri>model://my_camera</uri>
+      <!-- <uri>package://models/my_camera</uri> -->
+      <pose>0.2 0 0.15 0 0 0</pose>
+    </include>
+    <joint name="camera_joint" type="revolute">
+      <child>camera::link</child>
+      <parent>chassis</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <upper>0</upper>
+          <lower>0</lower>
+        </limit>
+      </axis>
+    </joint>
+
+      <!-- Adding Hokuyo -->
+
+      <include>
+        <uri>model://my_hokuyo</uri>
+        <pose>0.2 0 0.19 0 0 0</pose>
+      </include>
+      <joint name="hokuyo_joint" type="revolute">
+        <child>hokuyo::link</child>
+        <parent>chassis</parent>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <upper>0</upper>
+            <lower>0</lower>
+          </limit>
+        </axis>
+      </joint>
+
+      <!-- Camera Publisher Plugin -->
+      <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+        <updateRate>100.0</updateRate>
+        <robotNamespace>/</robotNamespace>
+
+<!--        <leftFrontJoint>left_front</leftFrontJoint>-->
+<!--        <rightFrontJoint>right_front</rightFrontJoint>-->
+<!--        <leftRearJoint>left_rear</leftRearJoint>-->
+<!--        <rightRearJoint>right_rear</rightRearJoint>-->
+    <leftFrontJoint>p3at_front_left_wheel_joint</leftFrontJoint>
+    <rightFrontJoint>p3at_front_right_wheel_joint</rightFrontJoint>
+    <leftRearJoint>p3at_back_left_wheel_joint</leftRearJoint>
+    <rightRearJoint>p3at_back_right_wheel_joint</rightRearJoint>
+
+        <wheelSeparation>0.4</wheelSeparation>
+        <wheelDiameter>0.215</wheelDiameter>
+        <robotBaseFrame>base_link</robotBaseFrame>
+        <torque>20</torque>
+        <topicName>joy_teleop/cmd_vel</topicName>
+        <broadcastTF>true</broadcastTF>
+      </plugin>
+    </gazebo>
+
+<!--       <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>rrbot/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin> -->
+
+      <!-- <plugin name="gazebo_light_sensor_plugin" filename="libgazebo_light_sensor_plugin.so">
+         <cameraName>camera</cameraName>
+         <alwaysOn>true</alwaysOn>
+         <updateRate>10</updateRate>
+         <imageTopicName>rgb/image_raw</imageTopicName>
+         <depthImageTopicName>depth/image_raw</depthImageTopicName>
+         <pointCloudTopicName>depth/points</pointCloudTopicName>
+         <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
+         <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
+         <frameName>camera_depth_optical_frame</frameName>
+         <baseline>0.1</baseline>
+         <distortion_k1>0.0</distortion_k1>
+         <distortion_k2>0.0</distortion_k2>
+         <distortion_k3>0.0</distortion_k3>
+         <distortion_t1>0.0</distortion_t1>
+         <distortion_t2>0.0</distortion_t2>
+         <pointCloudCutoff>0.4</pointCloudCutoff>
+         <robotNamespace>/</robotNamespace>
+       </plugin> -->
+<!--
+      <plugin name="camera_controller" filename="libCameraPlugin.so">
+        <updateRate>0.0</updateRate>
+        <cameraName>MyName/camera1</cameraName>
+        <imageTopicName>image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+-->
+      <!-- Laser Publisher Plugin -->
+
+    <!--   <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/rrbot/laser/scan</topicName>
+        <frameName>hokuyo_link</frameName>
+      </plugin> -->
+
+  </model>
+</sdf>
