@@ -1,0 +1,35 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="src.behaviour_script.x" />
+          <option value="src.behaviour_script.w" />
+          <option value="src.behaviour_script.y" />
+          <option value="src.behaviour_script.detectedobjectsMsg" />
+          <option value="src.behaviour_script.ExploreTaskAction" />
+          <option value="src.behaviour_script.MoveBaseGoal" />
+          <option value="src.behaviour_script.MoveBaseAction" />
+          <option value="src.behaviour_script.DirectionStatus" />
+          <option value="src.behaviour_script.tf" />
+          <option value="src.behaviour_script.std_msgs" />
+          <option value="src.behaviour_script.geometry_msgs" />
+          <option value="src.behaviour_script.smach_ros" />
+          <option value="src.behaviour_script.nav_msgs" />
+          <option value="src.behaviour_script.behaviour" />
+          <option value="src.behaviour_script.move_base_msgs" />
+          <option value="src.behaviour_script.human_detector" />
+          <option value="src.behaviour_script.actionlib_msgs" />
+          <option value="turtlesim" />
+          <option value="tf" />
+          <option value="smach_ros" />
+          <option value="smach" />
+          <option value="rospy" />
+          <option value="roslib" />
+          <option value="actionlib" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
