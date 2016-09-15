@@ -82,6 +82,18 @@ roslaunch bring_up server.launch
 roslaunch bring_up client.launch
 roslaunch bring_up gmapping.launch
 roslaunch bring_up move_base.launch
+
+```
+Then Gazebo should be up and running with robot spwaned in it :)
+
+###Control your Robot using XBOX360 controller
+connect the joystick then Run:
+```
 roslaunch bring_up teleop_joy.launch
 ```
-Then Gazebo should be up and running with robot in it :)
+but you still can't drive the robot unless you run:
+```
+rqt --force-discover
+```
+choose the "SOSVR controller" from Plugins menu then select the robot1 and press play button.
+press A & RB buttons at the same time for speed mode, then Enjoy your ride :)
