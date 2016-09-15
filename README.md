@@ -63,6 +63,16 @@ Assuming you're in the home directory and your catkin workspace folder is named 
 cd catkin_ws
 catkin_make
 ``` 
+###Source your project shell environment variables :
+```
+source ./devel/setup.bash
+```
+or
+```
+source ./devel/setup.bash
+```
+(depends on your shell)
+
 ###Running the code:
 Use these commands to bring up the 3D environment with the robot spawned in it:
 ```
