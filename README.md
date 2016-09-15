@@ -64,6 +64,7 @@ cd catkin_ws
 catkin_make
 ``` 
 ###Source your project shell environment variables :
+Run this command before run each 
 ```
 source ./devel/setup.bash
 ```
@@ -75,6 +76,7 @@ source ./devel/setup.zsh
 
 ###Running the code:
 Use these commands to bring up the 3D environment with the robot spawned in it:
+(Run each in seprate terminal session and dont forget to run the command from previous step before each)
 ```
 roslaunch bring_up server.launch
 roslaunch bring_up client.launch
