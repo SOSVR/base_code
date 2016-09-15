@@ -67,11 +67,11 @@ catkin_make
 ```
 source ./devel/setup.bash
 ```
-or
+or (if using zsh shell )
 ```
-source ./devel/setup.bash
+source ./devel/setup.zsh
 ```
-(depends on your shell)
+
 
 ###Running the code:
 Use these commands to bring up the 3D environment with the robot spawned in it:
