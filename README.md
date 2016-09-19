@@ -46,7 +46,7 @@ sudo apt-get install ros-indigo-gmapping
 ```
 sudo apt-get install ros-indigo-move-base
 ```
-# Running and compiling
+# compiling and Running 
 Here we should first create a catkin workspace and compile and run our code. Follow these steps to finally see the result:
 ###Creating a workspace
 Use these commands to create a catkin workspace: (here we name it *catkin_ws*)  
