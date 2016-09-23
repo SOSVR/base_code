@@ -1,0 +1,29 @@
+<package>
+  <name>bring_up</name>
+  <version>2.0.3</version>
+  <description>URDF file descriptions for P2OS/ARCOS robot</description>
+  <!-- <maintainer>Edward</maintainer> -->
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/p2os-purdue</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <maintainer email="mohamadamin@aut.ac.ir">Mohamad Amin Mohamadi</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>urdf</run_depend>
+
+  <run_depend>std_msgs</run_depend>
+
+</package>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="gui" default="true"/>
+  <arg name="paused" default="false"/>
+  <arg name="verbose" default="true"/>
+  <param name="use_sim_time" value="true"/>
+
+  <include file="$(find bring_up)/launch/robot_spawn.launch">
+    <arg name="pose_y" value="4"/>
+    <arg name="pose_x" value="17.0"/> 
+    <arg name="pose_yaw" default="3.14"/>
+  </include>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find bring_up)/rviz/display_urdf.rviz" required="true" /> 
+
+</launch>
