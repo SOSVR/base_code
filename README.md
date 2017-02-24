@@ -1,3 +1,7 @@
+Please cite this [paper](http://www.robocup2016.org/media/symposium/Team-Description-Papers/RescueSimulation/Virtual-Robot-Competition/RoboCup_2016_RescueS_Virtual_TDP_SOS.pdf) if you use the code in your work.
+[Taher Ahmadi](https://ceit.aut.ac.ir/~taher), [Sajad Azami](https://ceit.aut.ac.ir/~azami)
+---  
+
 #SOSvr Robotic Team Base Code
 This is our base code that can be used to build different robots for performing different tasks and simulate them in 3D with Gazebo. We have used ROS for developing our robot and used P3AT as the robot's model.
 For setting up this robot refer to the **usage** section.
