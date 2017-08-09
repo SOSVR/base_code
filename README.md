@@ -5,7 +5,7 @@ SOSvr Base Code
 [Taher Ahmadi](https://ceit.aut.ac.ir/~taher), [Sajad Azami](https://ceit.aut.ac.ir/~azami)
 
 *Note: By the end of April 2017, we are going to release base_code version 2.0.*
-
+*UPDATE(July 2017): This code is now deprecated and replaced with [base_code-v2](https://github.com/SOSVR/base_code-v2), as promised.
 ---
 # [Team SOSvr](https://sosvr.github.io) Virtual Robot Simulation Base Code
 
